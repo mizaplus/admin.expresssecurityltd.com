@@ -1,0 +1,16 @@
+{
+  "resourceName": "FileStorage",
+  "policyUUID": "37162abe",
+  "bucketName": "expresssecurity-media",
+  "storageAccess": "authAndGuest",
+  "guestAccess": [
+    "READ"
+  ],
+  "authAccess": [
+    "CREATE_AND_UPDATE",
+    "READ",
+    "DELETE"
+  ],
+  "triggerFunction": "NONE",
+  "groupAccess": {}
+}

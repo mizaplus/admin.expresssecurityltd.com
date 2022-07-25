@@ -1,0 +1,22 @@
+{
+  "resourceName": "Database",
+  "tableName": "Express-Security",
+  "partitionKey": {
+    "fieldName": "PK",
+    "fieldType": "string"
+  },
+  "sortKey": {
+    "fieldName": "SK",
+    "fieldType": "string"
+  },
+  "gsi": [
+    {
+      "name": "Product_Categories",
+      "partitionKey": {
+        "fieldName": "category",
+        "fieldType": "string"
+      }
+    }
+  ],
+  "triggerFunctions": []
+}

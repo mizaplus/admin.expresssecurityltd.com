@@ -1,0 +1,16 @@
+.Editor,
+.EditorDisabled {
+  margin-top: 0.5rem;
+  font-size: 110%;
+}
+
+.EditorDisabled {
+  background-color: #494b5b;
+}
+
+.label {
+  color: #fff;
+  font-size: 15px;
+  margin-bottom: 8px;
+  font-weight: 400 !important;
+}

@@ -1,0 +1,112 @@
+.card {
+  background-color: #27293d;
+  padding: 1rem;
+  border-radius: 5px;
+  height: 140px;
+  width: 100%;
+  position: relative;
+}
+
+.iconBox {
+  width: 60px;
+  height: 60px;
+  background-size: 210% 210%;
+  background-position: 100% 0;
+  border-radius: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.info {
+  text-align: right;
+  padding: 0rem 0.5rem;
+  width: 100%;
+}
+
+.info p {
+  margin: 0;
+  color: #94a9b1;
+  font-size: 0.9rem;
+}
+
+.info h4 {
+  color: #fff;
+  text-transform: inherit;
+  font-weight: 300 !important;
+  margin-top: 0.5rem;
+  margin-bottom: 0.75rem;
+  font-size: 2rem;
+}
+
+.info h4 span {
+  color: #9a9a9a;
+  font-size: 1rem;
+  font-weight: 500;
+  color: #fff;
+  margin-left: 0.2rem;
+}
+
+.bg-1 {
+  background: #ff8d72;
+  background-image: linear-gradient(to bottom left, #ff8d72, #ff6491, #ff8d72);
+}
+
+.bg-2 {
+  background: #00f2c3;
+  background-image: linear-gradient(to bottom left, #00f2c3, #0098f0, #00f2c3);
+}
+
+.bg-3 {
+  background: #e14eca;
+  background-image: linear-gradient(to bottom left, #e14eca, #ba54f5, #e14eca);
+}
+
+.bg-4 {
+  background: #5d8afd;
+  background-image: linear-gradient(to bottom left, royalblue, #0d4cec, royalblue);
+}
+
+.bg-5 {
+  background: #1db954;
+  background-image: linear-gradient(to bottom left, #1db954, #15ff00, #388854);
+}
+
+.bg-6 {
+  background: royalblue;
+  background-image: linear-gradient(
+    to bottom left,
+    royalblue,
+    rgb(50, 64, 104),
+    royalblue
+  );
+}
+
+.iconBox i {
+  font-size: 1.9rem;
+  color: rgb(255, 255, 255);
+}
+
+.footer {
+  height: 40px;
+  border-top: 1px solid #2b3553;
+  margin: 0rem 1rem;
+  position: absolute;
+  width: calc(100% - 2rem);
+  bottom: 0;
+  left: 0;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  color: #94a9b1;
+}
+
+.footer i {
+  font-size: 1.3rem;
+  margin-right: 0.2rem;
+}
+
+.footer p {
+  margin: 0;
+  font-size: 0.8rem;
+}

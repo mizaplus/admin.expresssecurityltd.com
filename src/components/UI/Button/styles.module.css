@@ -1,0 +1,92 @@
+.btn {
+  min-width: 200px;
+  padding: 9px 37px;
+  font-size: 1.1rem;
+  height: auto;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  text-transform: capitalize;
+  position: relative;
+  background: linear-gradient(to right, var(--primary-color) 0%, var(--accent-color) 100%);
+  color: #fff;
+  position: relative;
+  transition: 0.3s;
+  z-index: 1;
+  overflow: hidden;
+  text-align: center;
+  border-radius: 32.5px;
+  border: none;
+}
+
+.btn::before {
+  background-color: rgba(255, 255, 255, 0.2);
+  border-radius: 50%;
+  bottom: -40px;
+  content: "";
+  height: 65px;
+  left: -27px;
+  position: absolute;
+  width: 65px;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+  z-index: -1;
+}
+
+.btn::after {
+  background-color: rgba(255, 255, 255, 0.2);
+  border-radius: 50%;
+  content: "";
+  height: 65px;
+  width: 65px;
+  position: absolute;
+  right: -27px;
+  top: -40px;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+  z-index: -1;
+}
+
+.btn:hover::after,
+.btn:hover::before {
+  animation-name: fade;
+  animation-duration: 1s;
+  animation-fill-mode: forwards;
+}
+
+.btn:not(:hover)::after,
+.btn:not(:hover)::before {
+  animation-name: fadeBack;
+  animation-duration: 0.5s;
+  animation-fill-mode: forwards;
+}
+
+.small {
+  padding: 9px 17px !important;
+}
+
+@keyframes fade {
+  from {
+    opacity: 1;
+  }
+  to {
+    opacity: 0;
+    height: 140px;
+    width: 300px;
+  }
+}
+
+@keyframes fadeBack {
+  from {
+    opacity: 0;
+    height: 140px;
+    width: 300px;
+  }
+  to {
+    height: 65px;
+    width: 65px;
+  }
+}
+
+@media(max-width: 1099px){
+  .hide  { display: none; }
+}

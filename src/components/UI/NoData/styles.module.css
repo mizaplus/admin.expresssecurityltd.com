@@ -1,0 +1,24 @@
+.Nodata {
+  height: 300px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.Nodata i {
+  font-size: 1.5rem;
+}
+
+.Nodata p {
+  font-size: 0.9rem;
+  font-weight: 400 !important;
+}
+
+.dark i {
+  color: var(--primary-color);
+}
+
+.dark p {
+    color: #fff;
+}

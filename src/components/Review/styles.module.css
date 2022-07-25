@@ -1,0 +1,73 @@
+.client {
+  display: flex;
+  align-items: center;
+  padding: 1rem 0.5rem;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.editClient {
+  height: 200px;
+  border-radius: 4px;
+  display: flex;
+  align-items: center;
+  padding: 1rem 0.5rem;
+  flex-direction: column;
+  justify-content: center;
+  box-shadow: 0 0 30px 0 rgb(0 0 0 / 5%);
+}
+
+.client img,
+.editClient img {
+  height: 40px;
+  width: 40px;
+  border-radius: 50%;
+}
+
+.client h2,
+.editClient h2 {
+  font-size: 0.9rem;
+  margin: 0;
+}
+
+.client p {
+  margin: 0;
+  color: rgb(70, 70, 70);
+  font-size: 1rem;
+}
+
+.btns {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.btn,
+.btnDel {
+  color: #fff;
+  border: none;
+  border-radius: 20px;
+  padding: 0.4rem 2rem;
+  transition: all 0.5s;
+  margin: 0.4rem;
+}
+
+.btn {
+  background-color: royalblue;
+}
+
+.btnDel {
+  background-color: red;
+}
+
+.btn:hover,
+.btnDel:hover {
+  cursor: pointer;
+}
+
+.btn:hover {
+  background-color: rgb(119, 146, 228);
+}
+.btnDel:hover {
+  background-color: firebrick;
+}

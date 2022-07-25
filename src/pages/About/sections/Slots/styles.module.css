@@ -1,0 +1,105 @@
+.Box {
+  height: auto;
+  margin: 0.4rem;
+  border: 1px solid rgba(0, 0, 0, 0.125);
+  padding-bottom: 0.5rem;
+}
+
+.main {
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+  padding: 0.5rem;
+}
+
+.slot {
+  padding: 2.5rem 1rem;
+  background-color: #fff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  border-radius: 5px;
+}
+
+.slot i,
+.slot2 i {
+  color: #e62222;
+  font-size: 3rem;
+  margin-bottom: 0.7rem;
+}
+
+.slot h3,
+.slot2 h3 {
+  color: #555;
+  font-weight: 700;
+  margin-bottom: 0.4rem;
+}
+
+.slot p,
+.slot2 p {
+  margin-bottom: 0.2rem;
+  color: rgb(70, 70, 70);
+  text-align: center;
+}
+
+.btn {
+  background-color: royalblue;
+  color: #fff;
+  border-radius: 20px;
+  padding: 0.4rem 3rem;
+  border: none;
+  margin-top: 1rem;
+  cursor: pointer;
+  transition: all 0.5s;
+}
+
+.btn:hover {
+  background-color: rgb(15, 75, 255);
+}
+
+.preview {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.btn2 {
+  color: #fff;
+  background-color: #324fa7;
+  font-size: 1rem;
+  padding: 8px 64px;
+  width: 100%;
+  border-radius: 30px;
+  border: none;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.5s;
+}
+
+.btn2:disabled,
+.btn2:disabled:hover {
+  background-color: #6981c9;
+}
+
+.btn2:hover {
+  background-color: #1c2e63;
+}
+
+.slot2,
+.none {
+  padding: 2.5rem 1rem;
+  width: 90%;
+  height: 300px;
+  background-color: #fff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  border-radius: 5px;
+}
+
+.none {
+  border: 2px dashed #fff;
+  background-color: #c4c4c438;
+  color: #fff;
+}

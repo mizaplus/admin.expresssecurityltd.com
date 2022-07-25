@@ -1,0 +1,97 @@
+.Input {
+  height: auto;
+  margin-bottom: 0.5rem;
+  display: flex;
+  flex-flow: column;
+  transition: all 0.5s;
+}
+
+.Input label {
+  color: #fff;
+  font-size: 15px;
+  margin-bottom: 12px;
+  font-weight: 400 !important;
+}
+
+.InputWrapper {
+  border: 1px solid #c4c4c4;
+  border-radius: 3px;
+  box-sizing: border-box;
+  margin-bottom: 10px;
+  display: flex;
+  overflow: hidden;
+  align-items: center;
+  transition: all 0.5s;
+}
+
+.iconBox,
+.activeIcon {
+  width: auto;
+  padding: 0rem 16px;
+  height: 40px;
+  border-right: 1px solid #c4c4c438;
+  border-bottom: 1px solid #c4c4c438;
+  background-color: #99999938;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: all 0.5s;
+}
+
+.activeIcon:hover {
+  cursor: pointer;
+  background-color: firebrick;
+  color: #fff !important;
+}
+
+.activeIcon:hover .icon {
+  color: #fff;
+}
+
+.icon {
+  color: rgb(168, 168, 168);
+  font-size: 15px;
+}
+
+.Input input {
+  display: block;
+  border: none;
+  width: 100%;
+  padding: 0rem 16px;
+  height: 40px;
+  font-size: 14px;
+  outline: none;
+  background-color: inherit;
+  color: inherit;
+  transition: all 0.5s;
+  color: #fff;
+}
+
+.Input label span {
+  font-size: 12px;
+  color: var(--primary-color);
+}
+
+.Input input:disabled,
+.textarea:disabled {
+  background-color: #c4c4c438;
+}
+
+.textarea {
+  background-color: inherit;
+  display: block;
+  border: none;
+  padding: 1rem;
+  color: #fff;
+  height: 140px;
+  resize: none;
+  font-size: 14px;
+  outline: none;
+  border: 1px solid #c4c4c4;
+  transition: all 0.5s;
+  border-radius: 3px;
+}
+
+.lg {
+  height: 240px !important;
+}

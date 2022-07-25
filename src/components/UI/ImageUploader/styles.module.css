@@ -1,0 +1,97 @@
+.ImageUploader label {
+  color: #fff;
+  font-size: 15px;
+  margin-bottom: 8px;
+  font-weight: 400 !important;
+}
+
+.small {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.small .box {
+  width: 60% !important;
+  height: 230px !important;
+}
+
+.box,
+.boxMd {
+  height: 235px;
+  border: 2px dashed #324fa7;
+  position: relative;
+  margin-top: 1rem;
+}
+
+.boxMd { height: 310px; }
+
+.image {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  cursor: pointer;
+  align-items: center;
+  flex-direction: column;
+  justify-content: center;
+  background-position: center;
+  background-size: cover;
+  transition: all 0.5s;
+  position: absolute;
+  background-color: rgba(255, 255, 255, 0.021);
+}
+
+.loader {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(255, 255, 255, 0.925);
+  z-index: 1;
+  padding: 0.5rem 2rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.loader p {
+  color: #3556bb;
+  font-weight: 600;
+}
+
+.image:hover {
+  background-color: rgba(255, 255, 255, 0.062);
+}
+
+.icon {
+  font-size: 3rem;
+  color: #324fa7;
+}
+
+.close {
+  top: 0;
+  right: 0;
+  padding: 0.2rem;
+  font-size: 1.4rem;
+  width: 30px;
+  height: 30px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  background-color: #fff;
+  color: #555;
+  transition: all 0.5s;
+}
+
+.close:hover {
+  color: firebrick !important;
+}
+
+.image p {
+  margin: 0;
+  color: #fff;
+  padding-top: 0.1rem;
+  font-size: 14px;
+}

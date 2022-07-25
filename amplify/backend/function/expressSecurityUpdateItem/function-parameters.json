@@ -1,0 +1,21 @@
+{
+  "permissions": {
+    "storage": {
+      "FileStorage": [
+        "delete"
+      ],
+      "Database": [
+        "update"
+      ]
+    }
+  },
+  "lambdaLayers": [
+    {
+      "type": "ProjectLayer",
+      "resourceName": "expresssecuritylimitCustomLayer",
+      "env": "prod",
+      "version": "Always choose latest version",
+      "isLatestVersionSelected": true
+    }
+  ]
+}

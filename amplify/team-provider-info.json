@@ -1,0 +1,55 @@
+{
+  "prod": {
+    "awscloudformation": {
+      "AuthRoleName": "amplify-expresssecuritylimit-prod-183934-authRole",
+      "UnauthRoleArn": "arn:aws:iam::316190357269:role/amplify-expresssecuritylimit-prod-183934-unauthRole",
+      "AuthRoleArn": "arn:aws:iam::316190357269:role/amplify-expresssecuritylimit-prod-183934-authRole",
+      "Region": "eu-west-1",
+      "DeploymentBucketName": "amplify-expresssecuritylimit-prod-183934-deployment",
+      "UnauthRoleName": "amplify-expresssecuritylimit-prod-183934-unauthRole",
+      "StackName": "amplify-expresssecuritylimit-prod-183934",
+      "StackId": "arn:aws:cloudformation:eu-west-1:316190357269:stack/amplify-expresssecuritylimit-prod-183934/212d5b80-0c49-11ed-8a39-02c7f898d049",
+      "AmplifyAppId": "d382xqtn89g1lh"
+    },
+    "categories": {
+      "auth": {
+        "expresssecuritylimite45bd69e": {}
+      },
+      "function": {
+        "expresssecuritylimitCustomLayer": {
+          "deploymentBucketName": "amplify-expresssecuritylimit-prod-183934-deployment",
+          "s3Key": "amplify-builds/expresssecuritylimitCustomLayer-LambdaLayerVersion83682e09-build.zip"
+        },
+        "expressSecurityAddCategory": {
+          "deploymentBucketName": "amplify-expresssecuritylimit-prod-183934-deployment",
+          "s3Key": "amplify-builds/expressSecurityAddCategory-2b412b6d6f4c74555453-build.zip"
+        },
+        "expressSecurityAddProduct": {
+          "deploymentBucketName": "amplify-expresssecuritylimit-prod-183934-deployment",
+          "s3Key": "amplify-builds/expressSecurityAddProduct-5577754b613939456945-build.zip",
+          "mmm": ""
+        },
+        "expressSecurityUpdateItem": {
+          "deploymentBucketName": "amplify-expresssecuritylimit-prod-183934-deployment",
+          "s3Key": "amplify-builds/expressSecurityUpdateItem-314f6258724276665231-build.zip"
+        },
+        "expressSecurityDeleteItem": {
+          "deploymentBucketName": "amplify-expresssecuritylimit-prod-183934-deployment",
+          "s3Key": "amplify-builds/expressSecurityDeleteItem-426c30496b714d304c6f-build.zip"
+        },
+        "expressSecurityAddSolution": {
+          "deploymentBucketName": "amplify-expresssecuritylimit-prod-183934-deployment",
+          "s3Key": "amplify-builds/expressSecurityAddSolution-2f61666f373841414f59-build.zip"
+        },
+        "expressSecurityGetProducts": {
+          "deploymentBucketName": "amplify-expresssecuritylimit-prod-183934-deployment",
+          "s3Key": "amplify-builds/expressSecurityGetProducts-34433978373342772f31-build.zip"
+        },
+        "expressSecurityGetSolutions": {
+          "deploymentBucketName": "amplify-expresssecuritylimit-prod-183934-deployment",
+          "s3Key": "amplify-builds/expressSecurityGetSolutions-567a4b58707371435752-build.zip"
+        }
+      }
+    }
+  }
+}

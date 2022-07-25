@@ -1,0 +1,68 @@
+.Button {
+  border-radius: 30px;
+  min-width: 153px;
+  margin-bottom: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 12px;
+  font-weight: 400;
+  line-height: 1.42857143;
+  text-align: center;
+  white-space: nowrap;
+  vertical-align: middle;
+  touch-action: manipulation;
+  cursor: pointer;
+  -webkit-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  background-image: none;
+  background-color: orange;
+  text-transform: uppercase;
+  padding: 14px 0;
+  color: #fff;
+  border: none;
+  transition: all 0.5s;
+  margin-top: 0.8rem;
+}
+
+.alert p {
+  margin: 0;
+  font-weight: 500;
+  color: #fff;
+  font-size: 14px;
+}
+
+.icon {
+  color: #fff;
+  cursor: pointer;
+  transition: all 0.5s;
+}
+
+.icon:hover {
+  color: #ccc;
+}
+
+.success {
+  background-color: #29a746;
+}
+
+.danger {
+  background-color: #fe5d70;
+}
+
+.warning {
+  background-color: orange;
+}
+
+.reset {
+  background-color: rgb(9, 15, 97);
+}
+
+.primary {
+  background-color: var(--primary-color);
+}
+
+.Button:hover {
+  opacity: 0.7;
+}

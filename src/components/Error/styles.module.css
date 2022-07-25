@@ -1,0 +1,54 @@
+.Error {
+  height: 100%;
+  width: 100%;
+  background-color: inherit;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  animation-name: fade;
+  animation-duration: 1s;
+  animation-fill-mode: forwards;
+  opacity: 0;
+}
+
+.Error i {
+  color: firebrick;
+  font-size: 3rem;
+}
+
+.Error p {
+  margin-top: 1rem;
+  color: rgb(206, 72, 72);
+  font-weight: 300;
+}
+
+.btn {
+  margin-top: 1rem;
+  padding: 0.5rem 1rem;
+  border-radius: 30px;
+  border: none;
+  background-color: royalblue;
+  color: #fff;
+  cursor: pointer;
+  transition: all 0.5s;
+}
+
+.btn:hover {
+  background-color: #fff;
+  color: royalblue;
+}
+
+.btn i {
+  font-size: 1rem;
+  color: inherit;
+}
+
+@keyframes fade {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}

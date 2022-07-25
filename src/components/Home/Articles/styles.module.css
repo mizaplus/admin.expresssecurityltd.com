@@ -1,0 +1,35 @@
+.Articles {
+  height: auto;
+  background-color: #ffffff;
+  padding: 5rem 0.7rem;
+}
+
+.header {
+  margin-bottom: 4rem;
+}
+
+.header h4 {
+  font-family: "Shadows Into Light", sans-serif;
+  font-size: 1.5rem;
+  color: var(--primary-color);
+}
+
+.header h2 {
+  font-family: "Playfair Display", serif;
+  font-size: 1.5rem;
+}
+
+.header p {
+  margin: 0;
+  font-size: 01rem;
+}
+
+
+@media (max-width: 600px) {
+  .Articles { padding: 3rem 0.7rem; }
+  .header h4 {
+    font-size: 1.5rem;
+  } 
+  .header h2 { font-size: 1.8rem; } 
+  .header p { font-size: 1rem; }  
+}

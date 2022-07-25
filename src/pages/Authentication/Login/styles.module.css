@@ -1,0 +1,83 @@
+.Login {
+  height: 100vh;
+  position: relative;
+  background-size: cover;
+  background-position: center;
+  width: 100%;
+  background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)),
+    url("../../../assets/img/bg.jpg");
+}
+
+.card {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: #27293d;
+  padding: 35px 40px;
+  text-align: left;
+  min-width: 460px;
+  border-radius: 6px;
+  box-shadow: 1px 1px 4px 0 rgba(0, 0, 0, 0.15);
+  box-sizing: border-box;
+  height: auto;
+  animation-name: fade;
+  animation-fill-mode: forwards;
+  animation-duration: 1s;
+}
+
+@keyframes fade {
+  from {
+    opacity: 0;
+    top: 30%;
+  }
+  to {
+    opacity: 1;
+    top: 50%;
+  }
+}
+
+.card h3 {
+  color: #fff;
+  font-size: 18px;
+  font-weight: 500;
+  margin-bottom: 24px;
+}
+
+.links a {
+  font-size: 13px;
+  font-weight: 500;
+  transition: all 0.5s;
+}
+
+.links a:first-child {
+  color: var(--primary-color);
+}
+
+.links a:first-child:hover {
+  cursor: pointer;
+  color: #fff;
+}
+
+.links a:last-child {
+  color: #fff;
+  margin-left: 1.2rem;
+}
+.links a:last-child:hover {
+  color: var(--primary-color);
+}
+
+.submitBox {
+  margin-top: 1.4rem;
+}
+
+@media (max-width: 500px) {
+  .card {
+    min-width: 95%;
+    padding: 35px 20px;
+  }
+  .links {
+    display: flex;
+    justify-content: space-between;
+  }
+}

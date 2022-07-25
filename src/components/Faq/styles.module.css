@@ -1,0 +1,44 @@
+.question {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+}
+
+.question h3 {
+  font-weight: 500;
+  font-size: 1rem;
+}
+
+.question span {
+  font-size: 0.8rem;
+  color: #555;
+  margin-left: 1rem;
+  cursor: pointer;
+}
+
+.answer p {
+  font-size: 1.1rem;
+  color: #888;
+}
+
+.answer {
+  transition: height 0.5s;
+}
+
+.details a {
+  color: var(--primary-color);
+}
+
+.card {
+  height: 100px;
+  padding: 1rem 1rem;
+}
+
+.card h3 {
+  font-weight: 500;
+}
+
+.question2 h3 {
+  font-size: 0.9rem;
+}

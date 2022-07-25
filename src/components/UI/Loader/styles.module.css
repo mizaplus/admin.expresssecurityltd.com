@@ -1,0 +1,14 @@
+.loader {
+  height: calc(100vh - 130px);
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.loader p {
+  margin-top: 0.8rem;
+  font-weight: 600;
+  color: #fff;
+}

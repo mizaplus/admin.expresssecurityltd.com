@@ -1,0 +1,43 @@
+.ManageData {
+  height: auto;
+  margin: 0.4rem;
+  border: 1px solid rgba(0, 0, 0, 0.125);
+  padding-bottom: 1rem;
+}
+
+.box,
+.ManageBox {
+  padding: 3rem 0.4rem;
+}
+
+.ManageBox label {
+  color: #fff;
+  font-size: 15px;
+  margin-bottom: 12px;
+  font-weight: 400 !important;
+}
+
+.box {
+  background-color: #fff;
+}
+
+.btn,
+.btnReset {
+  color: #fff;
+  font-size: 1rem;
+  padding: 8px 64px;
+  width: 100%;
+  border-radius: 30px;
+  border: none;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.5s;
+}
+
+.btn {
+  background-color: #324fa7;
+}
+.btnReset {
+  background-color: #dbdbdb;
+  color: rgb(199, 20, 20);
+}

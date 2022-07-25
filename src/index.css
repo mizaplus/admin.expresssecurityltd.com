@@ -1,0 +1,108 @@
+@import url("https://fonts.googleapis.com/css2?family=Nunito:wght@200;300;400;600;800&family=Playfair+Display:wght@400;600&family=Shadows+Into+Light&display=swap");
+
+* {
+  font-family: "Nunito", sans-serif;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  scroll-behavior: smooth !important;
+}
+
+.MuiDataGrid-columnHeaders {
+  background-color: #fafafa !important;
+  color: #555;
+}
+
+body {
+  margin: 0;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  overflow-x: hidden;
+}
+
+.ql-container {
+  font-size: 0.9rem !important;
+  min-height: 300px !important;
+  max-height: 400px !important;
+  overflow-y: scroll !important;
+  margin-bottom: 2rem;
+}
+
+:root {
+  --primary-color: rgb(54, 179, 179);
+  --accent-color: rgb(33, 75, 110);
+  --dark-bg: #191c24;
+  --darker-bg: #0f1015;
+}
+
+label {
+  color: #555;
+  font-size: 15px;
+  margin-bottom: 8px;
+  font-weight: 400 !important;
+}
+
+a {
+  color: #555;
+  text-decoration: none;
+}
+
+.apexcharts-legend-series tspan {
+  font-weight: bold;
+  font-size: 20px;
+}
+
+ul {
+  padding-left: 0 !important;
+}
+
+.ql-toolbar.ql-snow {
+  border: 1px solid #ccc;
+  box-sizing: border-box;
+  font-family: "Nunito", sans-serif;
+  padding: 8px;
+  background: #ccc !important;
+}
+
+.ql-editor {
+  color: #fff;
+}
+
+.ql-editor.ql-blank::before {
+  color: rgb(255 255 255 / 60%);
+}
+
+* {
+  box-sizing: border-box;
+}
+
+/* Works on Firefox */
+* {
+  scrollbar-width: thin;
+  scrollbar-color: #555;
+}
+
+/* Works on Chrome, Edge, and Safari */
+*::-webkit-scrollbar {
+  width: 8px;
+  z-index: 1000;
+}
+
+*::-webkit-scrollbar-track {
+  background: inherit;
+}
+
+*::-webkit-scrollbar-thumb {
+  background-color: rgb(189, 189, 189);
+  border-radius: 20px;
+}
+
+@media (max-width: 500px) {
+  *::-webkit-scrollbar {
+    width: 3px;
+  }
+  *::-webkit-scrollbar-thumb {
+    background-color: rgb(226, 226, 226);
+    border-radius: 20px;
+  }
+}

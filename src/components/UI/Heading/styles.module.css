@@ -1,0 +1,15 @@
+.top {
+  background-color: #191c24;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 40px;
+}
+
+.top h3 {
+  font-weight: 600;
+  font-size: 1rem;
+  color: rgb(255, 255, 255);
+  cursor: pointer;
+  transition: all 0.5s;
+}
