@@ -1,0 +1,8 @@
+[
+  {
+    "Action": ["states:StartExecution"],
+    "Resource": [
+      "arn:aws:states:eu-west-1:316190357269:stateMachine:ESLDashboard"
+    ]
+  }
+]

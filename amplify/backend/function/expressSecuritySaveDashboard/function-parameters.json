@@ -1,0 +1,18 @@
+{
+  "permissions": {
+    "storage": {
+      "Database": [
+        "create"
+      ]
+    }
+  },
+  "lambdaLayers": [
+    {
+      "type": "ProjectLayer",
+      "resourceName": "expresssecuritylimitCustomLayer",
+      "env": "dev",
+      "version": "Always choose latest version",
+      "isLatestVersionSelected": true
+    }
+  ]
+}

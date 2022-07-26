@@ -72,6 +72,6 @@
     ]
   },
   "devDependencies": {
-    "aws-sdk": "^2.1161.0"
+    "aws-sdk": "^2.1181.0"
   }
 }

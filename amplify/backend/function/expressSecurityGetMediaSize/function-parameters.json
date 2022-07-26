@@ -1,0 +1,10 @@
+{
+  "permissions": {
+    "storage": {
+      "FileStorage": [
+        "read"
+      ]
+    }
+  },
+  "lambdaLayers": []
+}

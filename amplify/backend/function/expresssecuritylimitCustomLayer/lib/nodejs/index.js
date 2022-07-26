@@ -56,4 +56,19 @@ const generatePath = (text) => {
   return str.join("-");
 };
 
-module.exports = { generateDate, generatePath };
+const months = [
+  "January",
+  "February",
+  "March",
+  "April",
+  "May",
+  "June",
+  "July",
+  "August",
+  "September",
+  "October",
+  "November",
+  "December",
+];
+
+module.exports = { generateDate, generatePath, months };

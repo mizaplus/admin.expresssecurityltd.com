@@ -10,6 +10,7 @@ const Category = ({ item }) => {
       <img
         className={styles.image}
         style={{ backgroundImage: `url("${storageUrl}/${item.image}")` }}
+        alt=""
       />
       <div className={styles.info}>
         <h4>{item.tagline}</h4>

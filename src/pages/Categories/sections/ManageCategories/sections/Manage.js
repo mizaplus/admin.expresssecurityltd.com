@@ -30,7 +30,6 @@ const Manage = ({ id, data, setItem, refetchData }) => {
   const [loading, setLoading] = utils.useState(false);
   const [freeze, freezeApp] = utils.useState(false);
   const [oldImg, setImage] = utils.useState(null);
-  const [oldIcon, setIcon] = utils.useState(null);
   const [confirm, setConfirm] = utils.useState(false);
   const [isValid, setValidity] = utils.useState(false);
 
