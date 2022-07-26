@@ -29,7 +29,7 @@ body {
 }
 
 :root {
-  --primary-color: rgb(54, 179, 179);
+  --primary-color: #397d33;
   --accent-color: rgb(33, 75, 110);
   --dark-bg: #191c24;
   --darker-bg: #0f1015;

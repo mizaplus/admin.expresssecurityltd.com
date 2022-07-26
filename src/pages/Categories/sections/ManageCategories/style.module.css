@@ -1,5 +1,51 @@
+.ManageServices {
+  height: auto;
+  margin: 0.4rem;
+  border: 1px solid rgba(0, 0, 0, 0.125);
+  padding-bottom: 1rem;
+}
+
+.Manage {
+  height: auto;
+  padding-top: 1rem;
+}
+
+.btn,
+.btnReset {
+  color: #fff;
+  font-size: 1rem;
+  padding: 8px 64px;
+  width: 100%;
+  border-radius: 30px;
+  border: none;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.5s;
+}
+
+.btn {
+  background-color: #324fa7;
+}
+.btnReset {
+  background-color: #dbdbdb;
+  color: rgb(199, 20, 20);
+}
+
+.box {
+  padding: 2rem 0rem;
+}
+
+.btn:disabled,
+.btn:disabled:hover {
+  background-color: #6981c9;
+}
+
+.btn:hover {
+  background-color: #1c2e63;
+}
+
 .item {
-  height: 300px;
+  height: 400px;
   border-radius: 4px;
   overflow: hidden;
   position: relative;
@@ -17,13 +63,13 @@
 .imageBox {
   position: absolute;
   width: 100%;
-  height: 70%;
+  height: 50%;
 }
 
 .info {
   position: absolute;
   width: 100%;
-  height: 30%;
+  height: 50%;
   bottom: 0;
   background-color: #fff;
   padding: 0.5rem 1rem;
@@ -33,7 +79,7 @@
   margin: 0;
   font-size: 1.1rem;
   padding-top: 0.5rem;
-  color: var(--primary-color);
+  color: #e62222;
   font-weight: 600;
 }
 
@@ -52,44 +98,5 @@
   border-radius: 3px;
   cursor: pointer;
   transition: all 0.5s;
-  background-color: var(--primary-color);
-}
-
-.center {
-  display: flex;
-  justify-content: space-evenly;
-  align-items: center;
-  flex-direction: row;
-  margin-top: 0.4rem;
-}
-
-.btn {
-  font-size: 0.9rem;
-  padding: 3px 30px;
-  border: none;
-  border-radius: 30px;
-  cursor: pointer;
-  transition: all 0.5s;
-  margin-bottom: 1rem;
-  margin-right: 0.4rem;
-}
-
-.full {
-  background-color: rgb(30, 138, 16);
-  color: #fff;
-}
-
-.ghost {
-  background-color: rgb(187, 24, 24);
-  color: #fff;
-  box-shadow: 0 0 30px 0 rgb(31 140 236/ 20%);
-}
-
-.ghost:hover {
-  background-color: rgb(117, 16, 16);
-}
-
-.infoText {
-  color: #494f5a;
-  font-weight: 600;
+  background-color: #e62222;
 }

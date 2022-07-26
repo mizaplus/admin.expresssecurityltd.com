@@ -17,13 +17,8 @@ import ConfirmAccount from "pages/Authentication/ConfirmAccount/ConfirmAccount";
 import ForgotPassword from "pages/Authentication/ForgotPassword/ForgotPassword";
 
 //Importing data pages
-import Dashboard from "pages/Dashboard/Dashboard";
-import Homepage from "pages/Homepage/Homepage";
-import Services from "pages/Services/Services";
-import Careers from "pages/Careers/Careers";
-import Testimonials from "pages/Testimonials/Testimonials";
-import About from "pages/About/About";
-import Works from "pages/Works/Works";
+import Categories from "pages/Categories/Categories";
+import Solutions from "pages/Solutions/Solutions";
 
 //Importing theming
 import Theme from "./Theme";
@@ -54,62 +49,22 @@ function App() {
       ) : (
         <Routes>
           <Route
-            path="/dashboard"
+            path="/solutions"
             element={
               <Layout>
-                <Dashboard />
+                <Solutions />
               </Layout>
             }
           />
           <Route
-            path="/homepage"
+            path="/categories"
             element={
               <Layout>
-                <Homepage />
+                <Categories />
               </Layout>
             }
           />
-          <Route
-            path="/services"
-            element={
-              <Layout>
-                <Services />
-              </Layout>
-            }
-          />
-          <Route
-            path="/testimonials"
-            element={
-              <Layout>
-                <Testimonials />
-              </Layout>
-            }
-          />
-          <Route
-            path="/careers"
-            element={
-              <Layout>
-                <Careers />
-              </Layout>
-            }
-          />
-          <Route
-            path="/works"
-            element={
-              <Layout>
-                <Works />
-              </Layout>
-            }
-          />
-          <Route
-            path="/about-info"
-            element={
-              <Layout>
-                <About />
-              </Layout>
-            }
-          />
-          <Route path="*" element={<Navigate to="/dashboard" replace />} />
+          <Route path="*" element={<Navigate to="/categories" replace />} />
         </Routes>
       )}
     </>

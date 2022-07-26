@@ -14,13 +14,15 @@ exports.handler = async (event) => {
       .promise();
     const payload = {
       welcome: Items.filter((item) => item.SK === "WELCOME")[0],
-      categories: Items.filter((item) => item.SK.includes("CATEGORY#")).map(
-        (item) => ({
-          id: item.SK,
-          heading: item.category_name,
-        })
-      ),
-      products: Items.filter((item) => item.SK.includes("ITEM"))
+      categories: !event.minimal
+        ? Items.filter((item) => item.SK.includes("CATEGORY#"))
+        : Items.filter((item) => item.SK.includes("CATEGORY#")).map((item) => ({
+            id: item.SK.split("#")[1],
+            heading: item.category_name,
+            description: item.description,
+            image: item.image,
+            icon: item.icon,
+          })),
     };
     return {
       statusCode: 200,

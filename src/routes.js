@@ -5,9 +5,9 @@ export const routes = [
     pathname: "/dashboard",
   },
   {
-    title: "Homepage",
-    icon: "icofont-home",
-    pathname: "/homepage",
+    title: "Categories",
+    icon: "icofont-tools",
+    pathname: "/categories",
   },
   {
     title: "Products",
@@ -17,21 +17,6 @@ export const routes = [
   {
     title: "Solutions",
     icon: "icofont-tools-alt-2",
-    pathname: "/Solutions",
-  },
-  // {
-  //   title: "Testimonials",
-  //   icon: "icofont-chat",
-  //   pathname: "/testimonials",
-  // },
-  // {
-  //   title: "Careers",
-  //   icon: "icofont-briefcase",
-  //   pathname: "/careers",
-  // },
-  {
-    title: "About Us",
-    icon: "icofont-info",
-    pathname: "/about-info",
+    pathname: "/solutions",
   },
 ];

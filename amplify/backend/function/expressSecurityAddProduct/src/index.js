@@ -9,8 +9,8 @@ exports.handler = async (event) => {
         TableName: process.env.STORAGE_DATABASE_NAME,
         Item: {
           PK: "PRODUCTS",
-          SK: `ITEM#${generatePath(event.name)}`,
-          product_name: event.name,
+          SK: `ITEM#${generatePath(event.product_name)}`,
+          product_name: event.product_name,
           category: event.category,
           description: event.description,
           metaTitle: event.metaTitle,
