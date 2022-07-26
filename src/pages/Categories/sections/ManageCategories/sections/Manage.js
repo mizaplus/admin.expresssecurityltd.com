@@ -10,51 +10,49 @@ import { validateData } from "utils/modules";
 
 //Importing core components
 import { Container, Grid } from "@mui/material";
+import Confirm from "components/UI/Confirm/Confirm";
+import Dots from "react-activity/dist/Dots";
 import Input from "components/Input/Input";
 import ImageUploader from "components/UI/ImageUploader/ImageUploader";
-import Dots from "react-activity/dist/Dots";
-import Editor from "components/Editor/Editor";
-import Confirm from "components/UI/Confirm/Confirm";
 
 //Importing styles
-import styles from "../styles.module.css";
+import styles from "../style.module.css";
 import "react-activity/dist/Dots.css";
 
 const Manage = ({ id, data, setItem, refetchData }) => {
   const [form, setForm] = utils.useState({
-    heading: "",
-    description: "",
+    category_name: "",
     image: "",
     metaTitle: "",
     metaDesc: "",
-    details: "",
+    tagline: "",
   });
   const [loading, setLoading] = utils.useState(false);
   const [freeze, freezeApp] = utils.useState(false);
   const [oldImg, setImage] = utils.useState(null);
+  const [oldIcon, setIcon] = utils.useState(null);
   const [confirm, setConfirm] = utils.useState(false);
   const [isValid, setValidity] = utils.useState(false);
 
   utils.useEffect(() => {
     setForm({
-      heading: data ? data.heading : "",
-      description: data ? data.description : "",
+      category_name: data ? data.category_name : "",
       image: data ? data.image : "",
+      tagline: data ? data.tagline : "",
       metaTitle: data ? data.metaTitle : "",
       metaDesc: data ? data.metaDesc : "",
-      details: data ? data.details : "",
     });
   }, [data]);
 
   utils.useEffect(() => {
     if (
       form.SK ||
-      form.heading ||
-      form.description ||
+      form.category_name ||
+      form.icon ||
       form.metaTitle ||
       form.image ||
       form.metaDesc ||
-      form.details
+      form.tagline
     ) {
       setValidity(true);
     } else {
@@ -71,7 +69,7 @@ const Manage = ({ id, data, setItem, refetchData }) => {
       try {
         const token = (await Auth.currentSession()).getIdToken().getJwtToken();
         const res = await api.post(
-          "/solutions",
+          "/products/category",
           { ...payload },
           {
             headers: { Authorization: token },
@@ -164,12 +162,11 @@ const Manage = ({ id, data, setItem, refetchData }) => {
         setItem(null);
       } else {
         setForm({
-          heading: "",
-          description: "",
+          category_name: "",
           image: "",
           metaTitle: "",
           metaDesc: "",
-          details: "",
+          tagline: "",
         });
       }
     }
@@ -195,8 +192,6 @@ const Manage = ({ id, data, setItem, refetchData }) => {
               value={form.metaTitle}
               onTextChange={(value) => update("metaTitle", value, setForm)}
             />
-          </Grid>
-          <Grid item xs={12} sm={6}>
             <Input
               title="Meta Description"
               icon={"icofont-code-alt"}
@@ -205,43 +200,33 @@ const Manage = ({ id, data, setItem, refetchData }) => {
               value={form.metaDesc}
               onTextChange={(value) => update("metaDesc", value, setForm)}
             />
-          </Grid>
-          <Grid item xs={12} sm={6}>
             <Input
-              title="Service Name"
+              title="Category Name"
               icon={"icofont-heading"}
               maxLength={60}
               disabled={loading || freeze}
-              value={form.heading}
-              onTextChange={(value) => update("heading", value, setForm)}
+              value={form.category_name}
+              onTextChange={(value) => update("category_name", value, setForm)}
             />
             <Input
-              title="Service Description"
-              type={"textarea"}
-              maxLength={160}
+              title="Tagline"
+              icon={"icofont-heading"}
+              maxLength={25}
               disabled={loading || freeze}
-              value={form.description}
-              onTextChange={(value) => update("description", value, setForm)}
+              value={form.tagline}
+              onTextChange={(value) => update("tagline", value, setForm)}
             />
           </Grid>
           <Grid item xs={12} sm={6}>
             <ImageUploader
-              title="Service Image"
+              title="Category Image"
               image={form.image}
               edit={id}
               oldImg={oldImg}
+              md
               setOldImage={setImage}
               updateFormField={setForm}
               disabled={freeze || loading}
-            />
-          </Grid>
-          <Grid item xs={12} sm={12}>
-            <Editor
-              title="Service Details *"
-              content={form.details}
-              readOnly={freeze}
-              setLoading={setLoading}
-              onChange={(value) => update("details", value, setForm)}
             />
           </Grid>
           <Grid item xs={4}>
@@ -255,7 +240,7 @@ const Manage = ({ id, data, setItem, refetchData }) => {
               ) : id ? (
                 "Update Changes"
               ) : (
-                "Save Service"
+                "Save Category"
               )}
             </button>
           </Grid>

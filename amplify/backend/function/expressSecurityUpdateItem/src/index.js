@@ -13,6 +13,7 @@ exports.handler = async (event) => {
     details,
     product_name,
     category_name,
+    tagline,
     category,
     highlights,
     image,
@@ -56,12 +57,18 @@ exports.handler = async (event) => {
     if (metaDesc) {
       exp = exp + "metaDesc = :md,";
     }
+    if (tagline) {
+      exp = exp + "tagline = :tag,";
+    }
     exp = exp + "last_update = :lu";
     return exp;
   };
 
   const generateAttributeValues = () => {
     let updates = {};
+    if (tagline) {
+      updates[":tag"] = tagline;
+    }
     if (heading) {
       updates[":h"] = heading;
     }

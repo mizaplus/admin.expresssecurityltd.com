@@ -15,7 +15,13 @@ const Service = ({ item, edit, onEdit, onDelete }) => {
         />
       </div>
       <div className={styles.info}>
-        <h3 style={edit ? { textAlign: "center" } : {}}>{item.heading}</h3>
+        <h3 style={edit ? { textAlign: "center" } : {}}>
+          {item.heading
+            ? item.heading
+            : item.category_name
+            ? item.category_name
+            : item.product_name}
+        </h3>
         {!edit ? (
           <>
             <p>{item.description}</p>

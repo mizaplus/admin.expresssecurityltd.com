@@ -21,11 +21,9 @@ exports.handler = async (event) => {
             heading: item.category_name,
             description: item.description,
             image: item.image,
+            icon: item.icon,
           })),
     };
-    if (!event.minimal) {
-      payload.products = Items.filter((item) => item.SK.includes("ITEM#"));
-    }
     return {
       statusCode: 200,
       body: payload,

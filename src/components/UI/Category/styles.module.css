@@ -4,6 +4,10 @@
   background-color: #fff;
 }
 
+.icon {
+  height: 50px;
+}
+
 .image {
   position: absolute;
   top: 0;
@@ -29,11 +33,9 @@
   width: 100%;
   position: absolute;
   display: flex;
-  align-items: center;
-}
-
-.info div {
-  padding: 0rem 1rem;
+  align-items: flex-start;
+  flex-direction: column;
+  padding: 1rem 0rem;
 }
 
 .info h3,

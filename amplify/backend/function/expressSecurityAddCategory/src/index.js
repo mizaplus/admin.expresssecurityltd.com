@@ -14,7 +14,7 @@ exports.handler = async (event) => {
           metaTitle: event.metaTitle,
           metaDesc: event.metaDesc,
           image: event.image,
-          icon: event.icon,
+          tagline: event.tagline,
           date: generateDate().date,
           time: generateDate().time,
         },

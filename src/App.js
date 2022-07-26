@@ -17,6 +17,7 @@ import ConfirmAccount from "pages/Authentication/ConfirmAccount/ConfirmAccount";
 import ForgotPassword from "pages/Authentication/ForgotPassword/ForgotPassword";
 
 //Importing data pages
+import Categories from "pages/Categories/Categories";
 import Solutions from "pages/Solutions/Solutions";
 
 //Importing theming
@@ -55,7 +56,15 @@ function App() {
               </Layout>
             }
           />
-          <Route path="*" element={<Navigate to="/solutions" replace />} />
+          <Route
+            path="/categories"
+            element={
+              <Layout>
+                <Categories />
+              </Layout>
+            }
+          />
+          <Route path="*" element={<Navigate to="/categories" replace />} />
         </Routes>
       )}
     </>
