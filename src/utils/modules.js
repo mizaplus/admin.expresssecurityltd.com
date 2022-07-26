@@ -14,7 +14,7 @@ export const generatePath = (text) => {
 };
 
 export const storageUrl =
-  "https://expresssecurity-media183934-prod.s3.eu-west-1.amazonaws.com";
+  "https://expresssecurity-media54307-dev.s3.eu-west-1.amazonaws.com";
 
 export const extractObjectKeys = (text) => {
   const urls = getUrls(text);
@@ -65,6 +65,15 @@ export const compareStrings = (str1, str2) => {
   }
 };
 
+export const toMoney = (value) => {
+  var formatter = new Intl.NumberFormat("en-US", {
+    style: "currency",
+    currency: "USD",
+  });
+
+  return formatter.format(value);
+};
+
 export const validateData = (data) => {
   let valid = true;
   const missingFields = [];
@@ -76,7 +85,7 @@ export const validateData = (data) => {
           isValid = false;
         }
       });
-      if(!isValid){
+      if (!isValid) {
         missingFields.push(capitalize(key));
       }
     } else if (data[key] === "") {

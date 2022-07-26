@@ -18,6 +18,8 @@ import ForgotPassword from "pages/Authentication/ForgotPassword/ForgotPassword";
 
 //Importing data pages
 import Categories from "pages/Categories/Categories";
+import Products from "pages/Products/Products";
+import Safe from "pages/Safe/Safe";
 import Solutions from "pages/Solutions/Solutions";
 
 //Importing theming
@@ -49,10 +51,10 @@ function App() {
       ) : (
         <Routes>
           <Route
-            path="/solutions"
+            path="/safe-keeping"
             element={
               <Layout>
-                <Solutions />
+                <Safe />
               </Layout>
             }
           />
@@ -61,6 +63,22 @@ function App() {
             element={
               <Layout>
                 <Categories />
+              </Layout>
+            }
+          />
+          <Route
+            path="/products"
+            element={
+              <Layout>
+                <Products />
+              </Layout>
+            }
+          />
+          <Route
+            path="/solutions"
+            element={
+              <Layout>
+                <Solutions />
               </Layout>
             }
           />

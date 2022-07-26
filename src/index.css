@@ -29,7 +29,7 @@ body {
 }
 
 :root {
-  --primary-color: #397d33;
+  --primary-color: #53974d;
   --accent-color: rgb(33, 75, 110);
   --dark-bg: #191c24;
   --darker-bg: #0f1015;
@@ -65,7 +65,7 @@ ul {
 }
 
 .ql-editor {
-  color: #fff;
+  color: #555;
 }
 
 .ql-editor.ql-blank::before {

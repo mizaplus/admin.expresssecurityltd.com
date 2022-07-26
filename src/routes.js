@@ -5,14 +5,14 @@ export const routes = [
     pathname: "/dashboard",
   },
   {
-    title: "Categories",
-    icon: "icofont-tools",
-    pathname: "/categories",
+    title: "Safe Items",
+    icon: "icofont-ssl-security",
+    pathname: "/safe-keeping",
   },
   {
-    title: "Products",
-    icon: "icofont-tools",
-    pathname: "/Products",
+    title: "Categories",
+    icon: "icofont-code-alt",
+    pathname: "/categories",
   },
   {
     title: "Solutions",
