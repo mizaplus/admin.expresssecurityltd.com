@@ -17,7 +17,7 @@ export const routes = [
   {
     title: "Solutions",
     icon: "icofont-tools-alt-2",
-    pathname: "/Solutions",
+    pathname: "/solutions",
   },
   // {
   //   title: "Testimonials",

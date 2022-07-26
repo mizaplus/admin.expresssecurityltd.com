@@ -1,0 +1,50 @@
+.Preview {
+  height: auto;
+  margin: 0.4rem;
+  border: 1px solid rgba(0, 0, 0, 0.125);
+}
+
+.header {
+  max-width: 100%;
+}
+
+.welcome {
+  color: #fff;
+  height: 370px;
+  margin-top: -5px;
+  position: relative;
+  background-size: cover;
+  background-position: center;
+}
+
+.content {
+  top: 50%;
+  left: 15%;
+  position: absolute;
+  max-width: 600px;
+  transform: translateY(-50%);
+}
+
+.content h2 {
+  font-weight: 800;
+  font-size: 1.7rem;
+  margin-bottom: 0.6rem;
+}
+
+.btn {
+  padding: 8px 42px;
+  margin-top: 2rem;
+  font-size: 0.9rem;
+  border: none;
+  border-radius: 30px;
+  cursor: pointer;
+  transition: all 0.5s;
+  margin-right: 0.6rem;
+  background-color: var(--primary-color);;
+  color: #fff;
+}
+
+.services {
+  background-color: #fff;
+  padding: 3rem 0.5rem;
+}

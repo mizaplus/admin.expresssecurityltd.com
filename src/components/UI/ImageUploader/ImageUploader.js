@@ -53,7 +53,7 @@ const ImageUploader = ({
           setProgress(value);
         },
       });
-      const url = `${storageUrl}/public/${key}`;
+      const url = `public/${key}`;
       setOldImage(image ? image : null);
       update(field ? field : "image", url, updateFormField);
       setProgress(null);
@@ -113,7 +113,7 @@ const ImageUploader = ({
         <div
           className={styles.image}
           style={{
-            backgroundImage: `url("${image}")`,
+            backgroundImage: `url("${storageUrl}/${image}")`,
           }}
         >
           {!image ? (

@@ -14,7 +14,7 @@ export const generatePath = (text) => {
 };
 
 export const storageUrl =
-  "https://legitxpertsfiles152007-dev.s3.eu-west-2.amazonaws.com";
+  "https://expresssecurity-media183934-prod.s3.eu-west-1.amazonaws.com";
 
 export const extractObjectKeys = (text) => {
   const urls = getUrls(text);

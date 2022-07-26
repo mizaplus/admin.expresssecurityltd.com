@@ -1,5 +1,6 @@
 //Importing helper functions
 import classNames from "classnames";
+import { storageUrl } from "utils/modules";
 
 //Importing styles
 import styles from "./styles.module.css";
@@ -10,7 +11,7 @@ const Service = ({ item, edit, onEdit, onDelete }) => {
       <div className={styles.imageBox}>
         <div
           className={styles.image}
-          style={{ backgroundImage: `url("${item.image}")` }}
+          style={{ backgroundImage: `url("${storageUrl}/${item.image}")` }}
         />
       </div>
       <div className={styles.info}>
@@ -25,14 +26,6 @@ const Service = ({ item, edit, onEdit, onDelete }) => {
           </>
         ) : (
           <>
-            <p className={styles.infoText}>
-              <i className="icofont-clock-time"></i>Time Added: {item.time}
-              <br />
-              <i className="icofont-calendar"></i> Date Added: {item.date}
-              <br />
-              <i className="icofont-refresh"></i> Last Update:{" "}
-              {item.last_update ? item.last_update : "N/A"}
-            </p>
             <div className={styles.center}>
               <button
                 className={classNames(styles.btn, styles.full)}
