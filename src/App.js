@@ -17,6 +17,7 @@ import ConfirmAccount from "pages/Authentication/ConfirmAccount/ConfirmAccount";
 import ForgotPassword from "pages/Authentication/ForgotPassword/ForgotPassword";
 
 //Importing data pages
+import Dashboard from "pages/Dashboard/Dashboard";
 import Categories from "pages/Categories/Categories";
 import Products from "pages/Products/Products";
 import Safe from "pages/Safe/Safe";
@@ -51,6 +52,14 @@ function App() {
       ) : (
         <Routes>
           <Route
+            path="/dashboard"
+            element={
+              <Layout>
+                <Dashboard />
+              </Layout>
+            }
+          />
+          <Route
             path="/safe-keeping"
             element={
               <Layout>
@@ -82,7 +91,7 @@ function App() {
               </Layout>
             }
           />
-          <Route path="*" element={<Navigate to="/categories" replace />} />
+          <Route path="*" element={<Navigate to="/dashboard" replace />} />
         </Routes>
       )}
     </>

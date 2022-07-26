@@ -51,7 +51,7 @@
         },
         "expresssecuritylimitCustomLayer": {
           "deploymentBucketName": "amplify-expresssecurityltdco-dev-54307-deployment",
-          "s3Key": "amplify-builds/expresssecuritylimitCustomLayer-LambdaLayerVersion3965d269-build.zip"
+          "s3Key": "amplify-builds/expresssecuritylimitCustomLayer-LambdaLayerVersion7aa8ac8b-build.zip"
         },
         "expressSecurityGetSafeItem": {
           "deploymentBucketName": "amplify-expresssecurityltdco-dev-54307-deployment",
@@ -64,6 +64,35 @@
         "expressSecurityGetAllSafeItems": {
           "deploymentBucketName": "amplify-expresssecurityltdco-dev-54307-deployment",
           "s3Key": "amplify-builds/expressSecurityGetAllSafeItems-6d43316b4933542f5446-build.zip"
+        },
+        "expressSecurityDashboardEntry": {
+          "deploymentBucketName": "amplify-expresssecurityltdco-dev-54307-deployment",
+          "s3Key": "amplify-builds/expressSecurityDashboardEntry-544e4f6541334c524157-build.zip"
+        },
+        "expressSecuritySaveDashboard": {
+          "deploymentBucketName": "amplify-expresssecurityltdco-dev-54307-deployment",
+          "s3Key": "amplify-builds/expressSecuritySaveDashboard-564a3052694746773034-build.zip"
+        },
+        "expressSecurityGetDatabaseDetails": {
+          "deploymentBucketName": "amplify-expresssecurityltdco-dev-54307-deployment",
+          "s3Key": "amplify-builds/expressSecurityGetDatabaseDetails-70677a6c386142596d75-build.zip"
+        },
+        "expressSecurityGetMediaSize": {
+          "deploymentBucketName": "amplify-expresssecurityltdco-dev-54307-deployment",
+          "s3Key": "amplify-builds/expressSecurityGetMediaSize-7055624e7431664b314d-build.zip"
+        },
+        "expressSecurityGetDashboard": {
+          "deploymentBucketName": "amplify-expresssecurityltdco-dev-54307-deployment",
+          "s3Key": "amplify-builds/expressSecurityGetDashboard-58564c59506c54736747-build.zip"
+        },
+        "expressSecuritySaveLogin": {
+          "deploymentBucketName": "amplify-expresssecurityltdco-dev-54307-deployment",
+          "s3Key": "amplify-builds/expressSecuritySaveLogin-66735351792f684e4754-build.zip"
+        },
+        "expressSecurityGenerateDashboard": {
+          "stateMachineArn": "arn:aws:states:eu-west-1:316190357269:stateMachine:ESLDashboard",
+          "deploymentBucketName": "amplify-expresssecurityltdco-dev-54307-deployment",
+          "s3Key": "amplify-builds/expressSecurityGenerateDashboard-55376a433456736f7757-build.zip"
         }
       }
     }
