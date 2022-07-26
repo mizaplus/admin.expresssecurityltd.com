@@ -1,0 +1,275 @@
+.Root {
+  min-height: auto;
+  border-radius: 5px;
+  background-color: #27293d;
+  box-shadow: 0 0 30px 0 rgb(0 0 0 / 5%);
+}
+
+.box {
+  height: auto;
+  padding: 1rem 0.5rem;
+}
+
+.btn {
+  width: 100%;
+  border-radius: none;
+  background-color: royalblue;
+  color: #fff;
+  border: none;
+  padding: 0.5rem 1rem;
+  cursor: pointer;
+  font-size: 1.04rem;
+  border-radius: 30px;
+  -webkit-border-radius: 30px;
+  -moz-border-radius: 30px;
+  -ms-border-radius: 30px;
+  -o-border-radius: 30px;
+}
+
+.graph {
+  background-color: #27293d;
+  padding: 2rem 1rem;
+  border-radius: 5px;
+  margin-top: 1rem;
+  height: auto;
+}
+
+.chart {
+  height: 300px !important;
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+}
+
+.buttons {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  width: 300px;
+  border-radius: 30px;
+  border: 2px solid #105ea2;
+  overflow: hidden;
+}
+
+.buttons p {
+  color: inherit;
+  margin: 0;
+  font-size: 0.9rem;
+}
+
+.active,
+.inActive {
+  height: 30px;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  transition: all 0.5s;
+}
+
+.active {
+  background-color: #1f8cec;
+  color: #fff;
+  border-right: 1px solid #105ea2;
+}
+
+.inActive {
+  color: dodgerblue;
+  border-left: 1px solid #105ea2;
+}
+
+.inActive:hover {
+  background-color: #1f8cec;
+  color: #fff;
+}
+
+.title {
+  color: #fff;
+  font-weight: 400;
+  font-size: 20px;
+  font-weight: 300;
+  margin-bottom: 1rem;
+  margin-left: 1.7rem;
+}
+
+.tagline {
+  font-size: 0.8rem;
+  margin-left: 1.7rem;
+  color: gray;
+  font-weight: 500;
+  margin-bottom: 0.5rem;
+}
+
+.DataTable {
+  color: #fff !important;
+  border-collapse: collapse;
+  border-radius: 5px;
+  width: 100%;
+  margin-top: 2rem;
+}
+
+.thead {
+  background-color: #1f1f2b;
+}
+
+.thead th {
+  border-right: 1px solid #27293d;
+  padding: 0.8rem 0.6rem;
+}
+
+.trow {
+  animation-name: fade;
+  animation-duration: 2s;
+  animation-fill-mode: forwards;
+}
+
+@keyframes fade {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+.trow:nth-child(odd) {
+  background-color: #363848;
+}
+
+.trow:nth-child(even) {
+  background-color: #3e404d;
+}
+
+.trow td {
+  padding: 0.8rem;
+  position: relative;
+}
+
+.thead p {
+  font-weight: 400;
+  font-size: 1rem;
+}
+
+.trow p {
+  font-size: 0.9rem;
+  font-weight: 500;
+}
+
+.success {
+  color: #31b50d;
+  font-weight: 600;
+}
+
+.danger {
+  color: tomato;
+  font-weight: 600;
+}
+
+.thead i {
+  font-size: 1.3rem !important;
+}
+
+.clipboard {
+  background-color: #1f1f2b;
+  border: 1px solid #1d8102;
+  padding: 0.3rem 1rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.clipboard i {
+  color: #fff;
+  font-size: 1.2rem;
+  height: 20px;
+  width: 20px;
+  cursor: pointer;
+}
+
+.clipboard p {
+  margin: 0;
+  font-size: 1rem;
+  color: #fff;
+  font-weight: 600;
+}
+
+.confirmed,
+.unconfirmed {
+  padding: 0.3rem 0.7rem;
+  border-radius: 30px;
+  width: auto;
+  position: absolute;
+  top: 50%;
+  left: 0.8rem;
+  transform: translateY(-50%);
+}
+
+.confirmed {
+  background-color: #1d8102;
+}
+.unconfirmed {
+  background-color: #0073bb;
+}
+
+.confirmed p,
+.unconfirmed p {
+  text-transform: capitalize !important;
+  font-size: 0.8rem;
+  letter-spacing: 1.3px;
+}
+
+.TableFooter {
+  height: 45px;
+  width: 100%;
+  background-color: #3e404d;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+}
+
+.TableFooter p {
+  margin-right: 0.5rem;
+  color: #fff;
+}
+
+.TableFooter div i {
+  height: 20px;
+  width: 20px;
+  border-radius: 5px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.TableFooter i {
+  font-size: 1.3rem;
+  margin: 0rem 0.5rem;
+  color: rgb(255, 255, 255);
+  transition: all 0.5s;
+}
+
+.TableFooter i:hover {
+  color: rgb(136, 166, 255);
+  cursor: pointer;
+}
+
+@keyframes fade {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+.close {
+  font-size: 1.3rem;
+}
+
+.close:hover {
+  cursor: pointer;
+  color: red;
+}

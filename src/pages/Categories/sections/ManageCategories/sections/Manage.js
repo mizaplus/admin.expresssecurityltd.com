@@ -193,7 +193,7 @@ const Manage = ({ id, data, setItem, refetchData }) => {
               onTextChange={(value) => update("metaTitle", value, setForm)}
             />
             <Input
-              title="Meta Description"
+              title="Page Description"
               icon={"icofont-code-alt"}
               maxLength={160}
               disabled={loading || freeze}

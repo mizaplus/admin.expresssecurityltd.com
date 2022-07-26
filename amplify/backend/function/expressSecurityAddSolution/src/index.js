@@ -8,8 +8,8 @@ exports.handler = async (event) => {
       .put({
         TableName: process.env.STORAGE_DATABASE_NAME,
         Item: {
-          PK: "SOLUTIONS-PAGE",
-          SK: `SOLUTION#${generatePath(event.heading)}`,
+          PK: "SOLUTIONS",
+          SK: `ITEM#${generatePath(event.heading)}`,
           heading: event.heading,
           description: event.description,
           details: event.details,
@@ -24,7 +24,7 @@ exports.handler = async (event) => {
       .promise();
     return {
       statusCode: 200,
-      body: "Serviced Published Successfully",
+      body: "Service Published Successfully",
     };
   } catch (error) {
     if (error.code === "ConditionalCheckFailedException") {
