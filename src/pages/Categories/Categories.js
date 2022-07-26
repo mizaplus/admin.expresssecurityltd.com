@@ -20,7 +20,7 @@ const Categories = () => {
     if (refetch) {
       setPage((prevState) => ({ ...prevState, loading: true, error: null }));
       api
-        .get("/products")
+        .get("/categories")
         .then((res) => {
           setPage((prevState) => ({
             ...prevState,

@@ -69,7 +69,7 @@ const Manage = ({ id, data, setItem, refetchData }) => {
       try {
         const token = (await Auth.currentSession()).getIdToken().getJwtToken();
         const res = await api.post(
-          "/products/category",
+          "/categories",
           { ...payload },
           {
             headers: { Authorization: token },
